@@ -26,7 +26,7 @@ app.use(app.router);
 //routes
 
 app.get('/', routes.index); 
-app.get('/user', routes.user);
+app.get('/user', user.list);
 
 
 http.createServer(app).listen(3000, function() {
