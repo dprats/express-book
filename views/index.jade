@@ -1,10 +1,18 @@
+doctype
 html
  head
-  title Include Examples
-  include includes/style.css
+  title #{title}
+  link(rel='stylesheet', hred='/stylesheets/style.css')
  body
-  include includes/header.jade
-  include includes/content.md
- p ... and there is something original from the Jade file.
-  include includes/footer.html
-  include includes/script.js
+  h1 #{title}
+  p Enter your name and address to become a member
+
+  form(action='/signup', method='post')
+   div
+    label Name
+    input(type='text', name='name')
+   div
+    label Email
+    input(type='text', name='name')
+   div
+    input(type='submit')
