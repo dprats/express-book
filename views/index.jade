@@ -1,11 +1,10 @@
 html
-	head
-		title #{title}
-		script(src='javascripts/main.js')
-		link(rel='stylesheet', href='stylesheets/style.css')
-	body
-		#content
-			img(src='images/logo.png')
-			p WELCOME
-			p #{message}
-			#smile
+ head
+  title Include Examples
+  include includes/style.css
+ body
+  include includes/header.jade
+  include includes/content.md
+ p ... and there is something original from the Jade file.
+  include includes/footer.html
+  include includes/script.js
